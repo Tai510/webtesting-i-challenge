@@ -19,7 +19,7 @@ function fail(item) {
     durability -= 5
   } else if(enhancement >= 15 ) {
     durability -= 10
-  } else if(enhancement > 16 ) {
+  } if(enhancement > 16 ) {
     enhancement -= 1
   }
   return { ...item, durability: durability , enhancement: enhancement };
